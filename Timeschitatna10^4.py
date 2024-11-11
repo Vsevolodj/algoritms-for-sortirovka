@@ -36,7 +36,7 @@ insert =[]
 select = []
 bubl = []
 quik = []
-while i !=10**6:
+while i !=10**5:
     Massiv = [random.randint(0, 100) for i in range(i)]
     insert = insert + [round(insertion(Massiv),4)]
     select = select + [round(selection(Massiv),4)]
@@ -45,15 +45,8 @@ while i !=10**6:
     i=i*10
 
 print(f'|Алгоритмы|10|10^2|10^3|10^4|10^5|\n'
-      f'|-|-|-|-|-|-|\n'
-      f'|Вставками|{insert[0]}|{insert[1]}|{insert[2]}|{insert[3]}|{insert[4]}|\n'
-      f'|Выбором|{select[0]}|{select[1]}|{select[2]}|{select[3]}|{select[4]}|\n'
-      f'|Пузырьком|{bubl[0]}|{bubl[1]}|{bubl[2]}|{bubl[3]}|{bubl[4]}|\n'
-      f'|Быстрая|{quik[0]}|{quik[1]}|{quik[2]}|{quik[3]}|{quik[4]}|')
-
-# print(f'|Алгоритмы|10|10^2|10^3|10^4|10^5|\n'
-#       f'|-|-|-|-|-|-|\n'
-#       f'|Вставками|{insert[0]}|{insert[1]}|{insert[2]}|{insert[3]}|\n'
-#       f'|Выбором|{select[0]}|{select[1]}|{select[2]}|{select[3]}|\n'
-#       f'|Пузырьком|{bubl[0]}|{bubl[1]}|{bubl[2]}|{bubl[3]}|\n'
-#       f'|Быстрая|{quik[0]}|{quik[1]}|{quik[2]}|{quik[3]}|')
+        f'|-|-|-|-|-|-|\n'
+        f'|Вставками|{insert[0]}|{insert[1]}|{insert[2]}|{insert[3]}|\n'
+        f'|Выбором|{select[0]}|{select[1]}|{select[2]}|{select[3]}|\n'
+        f'|Пузырьком|{bubl[0]}|{bubl[1]}|{bubl[2]}|{bubl[3]}|\n'
+        f'|Быстрая|{quik[0]}|{quik[1]}|{quik[2]}|{quik[3]}|')
